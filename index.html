@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ASTI Food Reviews</title>
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:wght@320&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    
+    
+  </head>
+
+  <body>
+    
+    <div class="mainHeader"> <!--Header Stuff -->
+      <img
+        class="astiLogoImage"
+        src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/astiLogo.svg?v=1737083343883"
+        alt="ASTI Phoenix"
+      />
+      <div class="headerText">
+        <h1 class="headerFixed">ASTI FOOD REVIEWS</h1>
+        <h2 class="headerSecond">.  .  .</h2>
+      </div>
+    </div>
+  
+    <div>
+      <h2 style="text-align:center; margin: 0.5em 0em -0.3em 0em;">
+        About this website
+      </h2>
+      <p style="padding: 0em 1em 1em 1em; border-bottom:solid; border-color:grey;border-width:2px;">
+        This website is a project by ASTI students created to recommend students restaurants to eat at during lunch. This website is still a work-in-progress, so it would be greatly appreciated if you could fill out <a style="color:LightSkyBlue;" href="https://docs.google.com/forms/d/e/1FAIpQLSf4PJpioxE1O7JNkGTjp05G_6HMyxA0vwVWGiQJsveTirj0cg/viewform?usp=dialog">this short form to give feedback or report bugs.</a> Thanks for checking out this website!
+      </p>
+    </div>
+    
+    <div class="filterButtonContainer">
+      <button class="filterButton" id="filterWalkable">Walkable</button>
+      <button class="filterButton" id="filterCheap">$5-10</button>
+      <button class="filterButton" id="filterModeratelyExpensive">$10-20</button>
+      <button class="filterButton" id="filterShortWait">Short Wait</button>
+      <button class="filterButton" id="filterLongWait">Long Wait</button>
+    </div>
+    
+
+    <div class="restaurantList">
+      
+       <!--Habit Burger Card -->
+      <div onclick="window.location.href='habitBurger.html'" 
+           id="Habit"
+           style="cursor: pointer;" 
+           class="restaurantElement" 
+           filterTags = "American, $5-10, Walkable, Short Wait">
+        <div style="display:flex; flex-wrap:wrap;">
+        <div class="restaurantImageContainer">
+            <img
+            class="restaurantImage"
+            src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/habit.jpg?v=1741042728821"
+            alt="Habit Burger Picture"
+            >
+            <img
+            class="restaurantImage"
+            src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/habit.jpg?v=1741042728821"
+            alt="Habit Burger Picture"
+            >
+            <img
+            class="restaurantImage"
+            src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/habit.jpg?v=1741042728821"
+            alt="Habit Burger Picture"
+            >
+        </div>
+          <div class="restaurantTextContainer">
+            <div class="TitleAndTagBox">
+              <h3 class="restaurantTitle">
+                Habit Burger & Grill
+              </h3>
+              <div class="ratingAndTags">
+                  <div class="ratingBox">
+                    <img style="width:1em;height:1em;margin: 0em;" src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/vecteezy_star-illustrations-single-star_23639239.png?v=1742096217618" alt="Star">
+                    <h4 class="rating">4.20</h4>
+                  </div>
+                <div class="tagList">
+                </div>
+              </div>
+            </div>  
+            <p class="restaurantDescript">
+              A burger chain that originated from Santa Barbara, CA. Habit serves charburgers, their signature Santa Barbara sandwich, fries, onion rings, and more.
+            </p>
+          </div>
+        </div>
+      </div>     
+
+      
+       <!--Habit Burger Card -->
+      <div onclick="window.location.href='habitBurger.html'" 
+           id="Habit"
+           style="cursor: pointer;" 
+           class="restaurantElement" 
+           filterTags = "American, $5-10, Walkable">
+        <div style="display:flex; flex-wrap:wrap;">
+        <div class="restaurantImageContainer">
+            <img
+            class="restaurantImage"
+            src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/habit.jpg?v=1741042728821"
+            alt="Habit Burger Picture"
+            >
+            <img
+            class="restaurantImage"
+            src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/habit.jpg?v=1741042728821"
+            alt="Habit Burger Picture"
+            >
+            <img
+            class="restaurantImage"
+            src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/habit.jpg?v=1741042728821"
+            alt="Habit Burger Picture"
+            >
+        </div>
+          <div class="restaurantTextContainer">
+            <div class="TitleAndTagBox">
+              <h3 class="restaurantTitle">
+                Habit Burger & Grill
+              </h3>
+              <div class="ratingAndTags">
+                  <div class="ratingBox">
+                    <img style="width:1em;height:1em;margin: 0em;" src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/vecteezy_star-illustrations-single-star_23639239.png?v=1742096217618" alt="Star">
+                    <h4 class="rating">3.75</h4>
+                  </div>
+                <div class="tagList">
+                </div>
+              </div>
+            </div>  
+            <p class="restaurantDescript">
+              A burger chain that originated from Santa Barbara, CA. Habit serves charburgers, their signature Santa Barbara sandwich, fries, onion rings, and more.
+            </p>
+          </div>
+        </div>
+      </div>     
+
+      
+    </div>
+ 
+
+    <script src="script.js"></script>
+  </body>
+</html>
