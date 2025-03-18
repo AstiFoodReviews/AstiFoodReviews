@@ -14,7 +14,7 @@
     
     
   </head>
- 
+
   <body>
     
     <div class="mainHeader"> <!--Header Stuff -->
@@ -38,19 +38,26 @@
       </p>
     </div>
     
+    <div class="infoPopupBackground" id="popupBackgroundID">
+      <span class="infoPopup" id="infoID">
+        <span class="close" onclick="infoCloseFunction()">&times;</span>
+        <div class="infoPopupText">The "Walkable" tag is determined by whether it's possible to walk to the restaurant, eat there, and return to school within 40 minutes. </div></span>
+    </div>
+    
+    
+    
     <div class="filterButtonContainer">
-      <button class="filterButton" id="filterWalkable">Walkable</button>
+      <button class="filterButton" id="filterWalkable">Walkable<img class="infoIcon" onclick="infoFunction()" src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/infoIcon.png?v=1742157847362" alt="infoIcon"></button>
       <button class="filterButton" id="filterCheap">$5-10</button>
       <button class="filterButton" id="filterModeratelyExpensive">$10-20</button>
       <button class="filterButton" id="filterShortWait">Short Wait</button>
-      <button class="filterButton" id="filterLongWait">Long Wait</button>
     </div>
     
 
     <div class="restaurantList">
       
        <!--Habit Burger Card -->
-      <div onclick="window.location.href='habitBurger.html'" 
+      <div onclick="window.location.href='LINK.html'" 
            id="Habit"
            style="cursor: pointer;" 
            class="restaurantElement" 
@@ -64,12 +71,12 @@
             >
             <img
             class="restaurantImage"
-            src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/habit.jpg?v=1741042728821"
+            src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/Habit2.jpg?v=1742154956234"
             alt="Habit Burger Picture"
             >
             <img
             class="restaurantImage"
-            src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/habit.jpg?v=1741042728821"
+            src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/Habit3.jpg?v=1742155656548"
             alt="Habit Burger Picture"
             >
         </div>
@@ -81,7 +88,7 @@
               <div class="ratingAndTags">
                   <div class="ratingBox">
                     <img style="width:1em;height:1em;margin: 0em;" src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/vecteezy_star-illustrations-single-star_23639239.png?v=1742096217618" alt="Star">
-                    <h4 class="rating">4.20</h4>
+                    <h4 class="rating">4.00</h4>
                   </div>
                 <div class="tagList">
                 </div>
@@ -95,51 +102,237 @@
       </div>     
 
       
-       <!--Habit Burger Card -->
-      <div onclick="window.location.href='habitBurger.html'" 
-           id="Habit"
+       <!-- RareTea Card -->
+      <div onclick="window.location.href='LINK.html'" 
+           id="RareTea"
            style="cursor: pointer;" 
            class="restaurantElement" 
-           filterTags = "American, $5-10, Walkable">
+           filterTags = "Boba, $5-10, Walkable, Short Wait">
         <div style="display:flex; flex-wrap:wrap;">
         <div class="restaurantImageContainer">
             <img
             class="restaurantImage"
-            src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/habit.jpg?v=1741042728821"
-            alt="Habit Burger Picture"
+            src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/RareTea1.jpeg?v=1742153631308"
+            alt="RareTea Picture"
             >
             <img
             class="restaurantImage"
-            src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/habit.jpg?v=1741042728821"
-            alt="Habit Burger Picture"
+            src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/RareTea2.jpeg?v=1742153744556"
+            alt="RareTea Picture"
             >
             <img
             class="restaurantImage"
-            src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/habit.jpg?v=1741042728821"
-            alt="Habit Burger Picture"
+            src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/RareTea3.avif?v=1742153887306"
+            alt="RareTea Picture"
             >
         </div>
           <div class="restaurantTextContainer">
             <div class="TitleAndTagBox">
               <h3 class="restaurantTitle">
-                Habit Burger & Grill
+                RareTea
               </h3>
               <div class="ratingAndTags">
                   <div class="ratingBox">
                     <img style="width:1em;height:1em;margin: 0em;" src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/vecteezy_star-illustrations-single-star_23639239.png?v=1742096217618" alt="Star">
-                    <h4 class="rating">3.75</h4>
+                    <h4 class="rating">4.20</h4>
                   </div>
                 <div class="tagList">
                 </div>
               </div>
             </div>  
             <p class="restaurantDescript">
-              A burger chain that originated from Santa Barbara, CA. Habit serves charburgers, their signature Santa Barbara sandwich, fries, onion rings, and more.
+              Description about RareTea
             </p>
           </div>
         </div>
       </div>     
 
+      
+      <!-- Wescafe Card -->
+      <div onclick="window.location.href='LINK.html'" 
+           id="Wescafe"
+           style="cursor: pointer;" 
+           class="restaurantElement" 
+           filterTags = "Cafe, $10-20, Not Walkable, Long Wait">
+        <div style="display:flex; flex-wrap:wrap;">
+        <div class="restaurantImageContainer">
+            <img
+            class="restaurantImage"
+            src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/Wescafe1.jpg?v=1742155360087"
+            alt="Wescafe Picture"
+            >
+            <img
+            class="restaurantImage"
+            src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/Wescafe3.jpg?v=1742155756762"
+            alt="Wescafe Picture"
+            >
+            <img
+            class="restaurantImage"
+            src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/Wescafe2.jpg?v=1742155501537"
+            alt="Wescafe Picture"
+            >
+        </div>
+          <div class="restaurantTextContainer">
+            <div class="TitleAndTagBox">
+              <h3 class="restaurantTitle">
+                Wescafe
+              </h3>
+              <div class="ratingAndTags">
+                  <div class="ratingBox">
+                    <img style="width:1em;height:1em;margin: 0em;" src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/vecteezy_star-illustrations-single-star_23639239.png?v=1742096217618" alt="Star">
+                    <h4 class="rating">3.00</h4>
+                  </div>
+                <div class="tagList">
+                </div>
+              </div>
+            </div>  
+            <p class="restaurantDescript">
+              Description about Wescafe
+            </p>
+          </div>
+        </div>
+      </div>     
+
+      
+      <!-- Mango & Mint Card -->
+      <div onclick="window.location.href='LINK.html'" 
+           id="MangoAndMint"
+           style="cursor: pointer;" 
+           class="restaurantElement" 
+           filterTags = "Boba">
+        <div style="display:flex; flex-wrap:wrap;">
+        <div class="restaurantImageContainer">
+            <img
+            class="restaurantImage"
+            src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/RareTea1.jpeg?v=1742153631308"
+            alt="MangoAndMint Picture"
+            >
+            <img
+            class="restaurantImage"
+            src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/RareTea2.jpeg?v=1742153744556"
+            alt="MangoAndMint Picture"
+            >
+            <img
+            class="restaurantImage"
+            src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/RareTea3.avif?v=1742153887306"
+            alt="MangoAndMint Picture"
+            >
+        </div>
+          <div class="restaurantTextContainer">
+            <div class="TitleAndTagBox">
+              <h3 class="restaurantTitle">
+                Mango & Mint
+              </h3>
+              <div class="ratingAndTags">
+                  <div class="ratingBox">
+                    <img style="width:1em;height:1em;margin: 0em;" src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/vecteezy_star-illustrations-single-star_23639239.png?v=1742096217618" alt="Star">
+                    <h4 class="rating">4.20</h4>
+                  </div>
+                <div class="tagList">
+                </div>
+              </div>
+            </div>  
+            <p class="restaurantDescript">
+              Description about Mango & Mint
+            </p>
+          </div>
+        </div>
+      </div>  
+      
+      
+      <!-- In-N-Out Card -->
+      <div onclick="window.location.href='LINK.html'" 
+           id="InNOut"
+           style="cursor: pointer;" 
+           class="restaurantElement" 
+           filterTags = "Boba">
+        <div style="display:flex; flex-wrap:wrap;">
+        <div class="restaurantImageContainer">
+            <img
+            class="restaurantImage"
+            src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/RareTea1.jpeg?v=1742153631308"
+            alt="In-N-Out Picture"
+            >
+            <img
+            class="restaurantImage"
+            src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/RareTea2.jpeg?v=1742153744556"
+            alt="In-N-Out Picture"
+            >
+            <img
+            class="restaurantImage"
+            src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/RareTea3.avif?v=1742153887306"
+            alt="In-N-Out Picture"
+            >
+        </div>
+          <div class="restaurantTextContainer">
+            <div class="TitleAndTagBox">
+              <h3 class="restaurantTitle">
+                In-N-Out
+              </h3>
+              <div class="ratingAndTags">
+                  <div class="ratingBox">
+                    <img style="width:1em;height:1em;margin: 0em;" src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/vecteezy_star-illustrations-single-star_23639239.png?v=1742096217618" alt="Star">
+                    <h4 class="rating">4.20</h4>
+                  </div>
+                <div class="tagList">
+                </div>
+              </div>
+            </div>  
+            <p class="restaurantDescript">
+              Description about In-N-Out
+            </p>
+          </div>
+        </div>
+      </div>     
+      
+      
+      <!-- Ono Hawaiian BBQ Card -->
+      <div onclick="window.location.href='LINK.html'" 
+           id="Ono"
+           style="cursor: pointer;" 
+           class="restaurantElement" 
+           filterTags = "Boba">
+        <div style="display:flex; flex-wrap:wrap;">
+        <div class="restaurantImageContainer">
+            <img
+            class="restaurantImage"
+            src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/RareTea1.jpeg?v=1742153631308"
+            alt="Ono Hawaiian BBQ Picture"
+            >
+            <img
+            class="restaurantImage"
+            src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/RareTea2.jpeg?v=1742153744556"
+            alt="Ono Hawaiian BBQ Picture"
+            >
+            <img
+            class="restaurantImage"
+            src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/RareTea3.avif?v=1742153887306"
+            alt="Ono Hawaiian BBQ Picture"
+            >
+        </div>
+          <div class="restaurantTextContainer">
+            <div class="TitleAndTagBox">
+              <h3 class="restaurantTitle">
+                Ono Hawaiian BBQ
+              </h3>
+              <div class="ratingAndTags">
+                  <div class="ratingBox">
+                    <img style="width:1em;height:1em;margin: 0em;" src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/vecteezy_star-illustrations-single-star_23639239.png?v=1742096217618" alt="Star">
+                    <h4 class="rating">4.20</h4>
+                  </div>
+                <div class="tagList">
+                </div>
+              </div>
+            </div>  
+            <p class="restaurantDescript">
+              Description about Ono Hawaiian BBQ
+            </p>
+          </div>
+        </div>
+      </div>  
+
+
+      
       
     </div>
  
