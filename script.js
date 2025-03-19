@@ -84,6 +84,22 @@ function infoCloseFunction() {
   document.getElementsByTagName("body")[0].style.overflow = "auto";
 }
 
+function disclaimerFunction() {
+  var popup = document.getElementById("disclaimerID");
+  var background = document.getElementById("disclaimerBackgroundID");
+  popup.style.display = "block";
+  background.style.display = "block";
+  document.getElementsByTagName("body")[0].style.overflow = "hidden";
+}
+
+function disclaimerCloseFunction() {
+  var popup = document.getElementById("disclaimerID");
+  var background = document.getElementById("disclaimerBackgroundID");
+  popup.style.display = "none";
+  background.style.display = "none";
+  document.getElementsByTagName("body")[0].style.overflow = "auto";
+}
+
 
 filterCheapButton.addEventListener("click", () => {
   if (currentTags.includes("$10-20") == true) {
