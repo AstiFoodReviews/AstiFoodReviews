@@ -8,16 +8,13 @@
 
 body {
   background-color: #232323;
-  color: white; 
+  color: white;
   margin: 0%;
   font-family: "Inter", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: bold;
-
-  
 }
-
 
 .mainHeader {
   text-align: center;
@@ -26,26 +23,23 @@ body {
   justify-content: center;
   margin: 0% 0% 0% 0%;
   padding: 1em;
-  background-color: #003387;  
+  background-color: #003387;
   font-family: "Inter", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: bold;
-
 }
 
 .astiLogoImage {
   margin-right: 15px;
   width: 85px;
   border-radius: 100%;
-
 }
 
 .headerText {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-
 }
 
 .headerFixed,
@@ -55,21 +49,18 @@ body {
 }
 
 .headerFixed {
-  text-align: center;  
+  text-align: center;
   font-optical-sizing: auto;
   font-weight: 900;
   font-style: bold;
   font-size: 2em;
-  font-variation-settings:
-    "wdth" 100;
+  font-variation-settings: "wdth" 100;
 }
 
 .headerSecond {
-  
   font-weight: bold;
   font-size: 1.5em;
 }
-
 
 .restaurantElement {
   font-family: "Inter", serif;
@@ -80,17 +71,17 @@ body {
   margin: 0em 0em 1.5em 0em;
   padding: 2em 1em 0em 1em;
   border-top: solid;
-  border-color:grey;
+  border-color: grey;
   border-width: 1px;
 }
 
 .restaurantTextContainer {
- max-width: 100%; 
+  max-width: 100%;
 }
 
 .TitleAndTagBox {
   border: none;
-  margin: 1em 0.0em 0em 0.0em;
+  margin: 1em 0em 0em 0em;
   padding: 0em;
   vertical-align: bottom;
   font-size: 1em;
@@ -102,21 +93,21 @@ body {
   margin: 0em 0em 0em 0em;
   display: inline-block;
   font-size: 2.4em;
-  max-width:100%;
+  max-width: 100%;
 }
 
 .ratingAndTags {
-  display:flex;
+  display: flex;
 }
 
 .tagList {
-  display:flex;
-  box-sizing:border-box;
+  display: flex;
+  box-sizing: border-box;
   margin: 0em;
   max-width: 100%;
   max-height: 5em;
   object-fit: contain;
-  overflow:auto;
+  overflow: auto;
   float: right;
 }
 
@@ -124,48 +115,46 @@ body {
   display: inline-block;
   background: green;
   margin: 0.5em;
-  max-width:100%;
+  max-width: 100%;
   font-size: 1em;
   padding: 0.5em;
   border-radius: 1em;
   vertical-align: middle;
-  white-space:nowrap;
+  white-space: nowrap;
 }
 
-
 .ratingBox {
-  display:flex;
-  box-sizing:border-box;
+  display: flex;
+  box-sizing: border-box;
   margin: 0.5em;
   background: #003387;
   font-size: 1em;
   padding: 0.5em 0.5em 0em 0.5em;
   border-radius: 1em;
-  white-space:nowrap;
+  white-space: nowrap;
 }
 
 .rating {
-  margin:0em 0em 0em 0.3em;
+  margin: 0em 0em 0em 0.3em;
   font-size: 1em;
 }
 
 .restaurantDescript {
-  border:none;
+  border: none;
   vertical-align: top;
   margin: 1em 0em 0em 0em;
   padding: 0em 0em 0em 0em;
 }
 
 .restaurantImageContainer {
-  display:flex;
-  box-sizing:border-box;
+  display: flex;
+  box-sizing: border-box;
   margin: 0%;
   max-width: 100%;
 
   object-fit: contain;
-  overflow-x:auto;
+  overflow-x: auto;
 }
-
 
 .restaurantImage {
   margin: 0% 4% 0% 0%;
@@ -174,68 +163,65 @@ body {
   height: 9em;
   border-color: white;
   border: solid;
-  
 }
 
-@media screen and (orientation:landscape) {
+@media screen and (orientation: landscape) {
   .restaurantImage {
     margin: 1%;
   }
   .restaurantTextContainer {
     margin: 1%;
-  }  
+  }
   .restaurantElement {
     padding: 2%;
   }
   .restaurantImageContainer {
-    width:100%;
+    width: 100%;
   }
 }
 
 .filterButtonContainer {
-  position:sticky;
-  top:0;
+  position: sticky;
+  top: 0;
   margin: -1em 0em 0em 0em;
   padding: 1em 0em 1em 0em;
   background: #232323;
-  border-bottom:solid;
-  border-width:1px;
-  border-color:grey;
-  overflow:auto;
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: grey;
+  overflow: auto;
   object-fit: contain;
-  white-space:nowrap;
+  white-space: nowrap;
 }
 
-
 .infoIcon {
-  position:relative;
-  width:1em;
-  height:1em;
+  position: relative;
+  width: 1em;
+  height: 1em;
   margin: 0em 0em -0.1em 0.3em;
-  text-align:center;
-  float:center;
-  cursor:pointer;
+  text-align: center;
+  float: center;
+  cursor: pointer;
 }
 
 .infoPopup {
-  display:none;
+  display: none;
   background-color: grey;
   color: white;
   border-radius: 6px;
   position: absolute;
   z-index: 1;
-  float:center;
+  float: center;
   margin: 0em 2em 0em 2em;
-  top:13em;
+  top: 13em;
 }
 
-
 .infoPopupText {
-  margin:1em;
+  margin: 1em;
 }
 
 .infoPopupBackground {
-  display:none;
+  display: none;
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   padding-top: 100px; /* Location of the box */
@@ -243,23 +229,22 @@ body {
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  overflow:hidden;
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  overflow: hidden;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
 }
 
 .close {
-  position:relative;
-  cursor:pointer;
-  float:right;
-  top:0em;
-  left:0em;
-  margin:0em 0.4em 0em 0em;
+  position: relative;
+  cursor: pointer;
+  float: right;
+  top: 0em;
+  left: 0em;
+  margin: 0em 0.4em 0em 0em;
   font-size: 2em;
   font-weight: bold;
   transition: 0.3s;
 }
-
 
 .filterButton {
   font-size: 1em;
@@ -294,7 +279,7 @@ body {
   background: #3281ff;
 }
 
-@media (pointer:none), (pointer:coarse) {
+@media (pointer: none), (pointer: coarse) {
   .filterButton:hover {
     background: white;
   }
@@ -303,61 +288,52 @@ body {
   }
 }
 
-  
 .restaurantPageImage {
   width: 45%;
   height: auto;
   margin: 5% 0 0 5%;
   max-width: 100%;
   height: 100%;
-    
 }
 
 .restaurantPageStyle {
-  display:inline-block;
-  
+  display: inline-block;
 }
 
 .wrapper {
   display: flex;
   box-sizing: border-box;
-  overflow-x: auto;        /* Enables horizontal scroll */
+  overflow-x: auto; /* Enables horizontal scroll */
   scroll-behavior: smooth; /* Optional: smooth scrolling */
-  gap: 2%;                 /* Space between items (instead of margin-right on items) */
-  margin: 5% 5% 5% 5%;     /* Top, Right, Bottom, Left margins */
-  padding-bottom: 1em;     /* Space below the items */
+  gap: 2%; /* Space between items (instead of margin-right on items) */
+  margin: 5% 5% 5% 5%; /* Top, Right, Bottom, Left margins */
+  padding-bottom: 1em; /* Space below the items */
 }
 
 .wrapper::-webkit-scrollbar {
-  height: 8px;             /* Optional: scrollbar styling */
+  height: 8px; /* Optional: scrollbar styling */
 }
 
 .wrapper::-webkit-scrollbar-thumb {
-  background-color: #f3f3f3;  /* Optional: scrollbar styling */
+  background-color: #f3f3f3; /* Optional: scrollbar styling */
   border-radius: 4px;
 }
 
 .wrapper .item {
-  flex: 0 0 auto;         /* Prevent shrinking, prevent growing */
-  width: 300px;           /* Fixed width */
-  height: 300px;          /* Fixed height */
-  display: flex;          /* Flex to center content inside */
+  flex: 0 0 auto; /* Prevent shrinking, prevent growing */
+  width: 300px; /* Fixed width */
+  height: 300px; /* Fixed height */
+  display: flex; /* Flex to center content inside */
   justify-content: center;
   align-items: center;
   border-radius: 5%;
   background-color: #f5f5f5; /* Optional: background for item container */
-  overflow: hidden;       /* Clips image overflow if needed */
+  overflow: hidden; /* Clips image overflow if needed */
 }
 
 /* Make sure images fill the item area */
 .wrapper .item img {
   width: 100%;
   height: 100%;
-  object-fit: cover;      /* Makes sure the image covers the box neatly */
+  object-fit: cover; /* Makes sure the image covers the box neatly */
 }
-
-
-
-
-
-
