@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Wescafe</title>
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:wght@320&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body style="background-color: #232323; color: white">
+    <div class="mainHeader">
+      <!--Header Stuff -->
+      <div class="headerText">
+        <h1 class="headerFixed" style="color: white">Wescafe</h1>
+      </div>
+    </div>
+
+    <div>
+      <div style="display: flex; flex-wrap: wrap">
+        <div class="wrapper">
+          <div class="item">
+            <img style="border-radius: 3%" src="images/wescafe/Wescafe1.jpg" />
+          </div>
+          <div class="item">
+            <img style="border-radius: 3%" src="images/wescafe/Wescafe2.jpg" />
+          </div>
+          <div class="item">
+            <img style="border-radius: 3%" src="images/wescafe/Wescafe3.jpg" />
+          </div>
+        </div>
+
+        <div style="margin: 0% 5% 5% 5%; width: 100%">
+          <h2 style="font-size: 3em">Overall Rating</h2>
+
+          <div
+            class="relative group flex items-center space-x-2 cursor-pointer text-white text-2xl"
+            style="width: 100%; margin-bottom: 5%"
+            onclick="togglePopup()"
+          >
+            <img
+              style="width: 1em; height: 1em; margin: 0; margin-right: 0.25em"
+              src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/vecteezy_star-illustrations-single-star_23639239.png?v=1742096217618"
+              alt="Star"
+            />
+            <img
+              style="width: 1em; height: 1em; margin: 0; margin-right: 0.25em"
+              src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/vecteezy_star-illustrations-single-star_23639239.png?v=1742096217618"
+              alt="Star"
+            />
+            <img
+              style="
+                width: 1em;
+                height: 1em;
+                margin: 0;
+                margin-right: -0.25em;
+                clip-path: inset(0 60% 0 0);
+              "
+              src="https://cdn.glitch.global/74e7e374-665e-4d44-b20e-5fdeda416c19/vecteezy_star-illustrations-single-star_23639239.png?v=1742096217618"
+              alt="Star"
+            />
+            <svg
+              style="
+                width: 1.15em;
+                height: 1.15em;
+                margin: 0;
+                margin-top: 0.075em;
+                margin-left: -0.85em;
+                margin-right: 0.25em;
+                clip-path: inset(0 0 0 30%);
+                background-color: rgb(0, 0, 0); /* Fallback color */
+                background-color: rgba(0, 0, 0, 0); /* Black w/ opacity */
+              "
+              viewbox="0 0 24 24"
+              fill="none"
+              stroke="#FFDD55"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              alt="Blank_Star"
+            >
+              <polygon
+                points="12 2 15 9 22 9 17 14 19 21 12 17 5 21 7 14 2 9 9 9 12 2"
+              />
+            </svg>
+
+            <svg
+              style="
+                width: 1.15em;
+                height: 1.15em;
+                margin: 0;
+                margin-top: 0.075em;
+                margin-right: 0.25em;
+                background-color: rgb(0, 0, 0); /* Fallback color */
+                background-color: rgba(0, 0, 0, 0); /* Black w/ opacity */
+              "
+              viewbox="0 0 24 24"
+              fill="none"
+              stroke="#FFDD55"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              alt="Blank_Star"
+            >
+              <polygon
+                points="12 2 15 9 22 9 17 14 19 21 12 17 5 21 7 14 2 9 9 9 12 2"
+              />
+            </svg>
+
+            <svg
+              style="
+                width: 1.15em;
+                height: 1.15em;
+                margin: 0;
+                margin-top: 0.075em;
+                margin-right: 0.25em;
+                background-color: rgb(0, 0, 0); /* Fallback color */
+                background-color: rgba(0, 0, 0, 0); /* Black w/ opacity */
+              "
+              viewbox="0 0 24 24"
+              fill="none"
+              stroke="#FFDD55"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              alt="Blank_Star"
+            >
+              <polygon
+                points="12 2 15 9 22 9 17 14 19 21 12 17 5 21 7 14 2 9 9 9 12 2"
+              />
+            </svg>
+
+            <p><b>2.25 / 5</b></p>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewbox="0 0 24 24"
+              stroke="currentColor"
+              class="w-6 h-6 text-white hover:text-gray-300 transition"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 16h-1v-4h-1m1-4h.01M12 2a10 10 0 100 20 10 10 0 000-20z"
+              />
+            </svg>
+          </div>
+
+          <h4 style="margin: auto auto auto 0" class="tag"><b>Cafe</b></h4>
+          <h4 style="margin: auto auto auto 0" class="tag"><b>$10-20</b></h4>
+          <h4 style="margin: auto auto auto 0" class="tag"><b>Long wait</b></h4>
+        </div>
+      </div>
+
+      <p style="margin: 0% 5% 5% 5%; font-size: 1.25em">
+        Wescafe has indoor and outdoor seating, with a really nice outdoor patio
+        in the back. They serve mostly brunch and breakfast foods along with a
+        variety of drinks. The food is reasonably priced, but some of the drinks
+        are a little on the more expensive side (a smoothie is $8) The place
+        isn't usually crowded and has a good amount of seating. It’s a nice
+        place to take aesthetic food pictures!
+      </p>
+
+      <h2
+        style="
+          margin-left: 5%;
+          margin-right: 5%;
+          margin-bottom: 5%;
+          font-size: 1.5em;
+          text-align: center;
+        "
+      >
+        <a
+          href="https://www.google.com/maps/dir//Wescafe,+1518+Webster+St,+Alameda,+CA+94501/@37.7739248,-122.2791068,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x1532f7a923f6339b:0x8a626951eb88d9c4!2m2!1d-122.2766168!2d37.7739261?entry=ttu&g_ep=EgoyMDI1MDMxOC4wIKXMDSoJLDEwMjExNjQwSAFQAw%3D%3D"
+          target="_blank"
+          style="
+            color: white;
+            background-color: green;
+            padding: 12px 0;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            display: block;
+            width: 100%;
+            transition: all 0.3s ease-in-out;
+          "
+        >
+          Directions
+        </a>
+      </h2>
+    </div>
+
+    <footer
+      style="
+        background-color: #003287;
+        color: white;
+        padding: 20px;
+        text-align: center;
+      "
+    >
+      <p>&copy; 2025 ASTI Food Reviews. All rights reserved.</p>
+    </footer>
+
+    <!-- POPUP: Minimal Additions, No Style Changes -->
+    <div
+      id="popup"
+      style="
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+      "
+    >
+      <div
+        style="
+          background-color: white;
+          color: black;
+          padding: 20px;
+          border-radius: 10px;
+          max-width: 80%;
+          text-align: center;
+        "
+      >
+        <h2 style="margin-bottom: 5%">
+          <b class="text-2xl">Our Rating Metrics:</b>
+        </h2>
+
+        <div
+          style="
+            max-width: 400px; /* keeps it smaller on all screens */
+            height: 300px; /* adjust this for more/less visible content */
+            overflow-y: auto; /* makes it scrollable vertically */
+            padding: 20px; /* space inside the box */
+            margin: 0 auto; /* centers it on the page */
+            border: 1px solid #ccc; /* optional: border for the box */
+            border-radius: 10px; /* rounded corners */
+            font-family: 'Inter', sans-serif;
+            color: black;
+            background-color: #f9f9f9; /* optional: light background for contrast */
+            font-size: 0.9em; /* makes the text slightly smaller */
+          "
+        >
+          <h2 style="font-size: 1.5em; margin-bottom: 0.5em">
+            Point System / 5:
+          </h2>
+
+          <ul style="list-style-type: none; padding-left: 0">
+            <!-- Pricing / Serving Size -->
+            <li style="margin-bottom: 1em">
+              <strong>1.5 Points - Pricing / Serving Size</strong>
+              <ul
+                style="
+                  list-style-type: none;
+                  padding-left: 1.2em;
+                  margin-top: 0.5em;
+                "
+              >
+                <li><em>0:</em> Expensive, ($20-30 to satisfy hunger)</li>
+                <li style="color: #fcc612; font-weight: bold">
+                  <em>0.75:</em> Moderately expensive, ($10-20 to satisfy
+                  hunger)
+                </li>
+                <li><em>1.5:</em> Cheap, ($5-10 to satisfy hunger)</li>
+              </ul>
+            </li>
+
+            <!-- Taste -->
+            <li style="margin-bottom: 1em">
+              <strong>1.5 Points - Taste</strong>
+              <ul
+                style="
+                  list-style-type: none;
+                  padding-left: 1.2em;
+                  margin-top: 0.5em;
+                "
+              >
+                <li><em>0:</em> Do not eat there</li>
+                <li><em>0.5:</em> I would eat there once a semester</li>
+                <li style="color: #fcc612; font-weight: bold">
+                  <em>1:</em> I would eat there once a month
+                </li>
+                <li><em>1.5:</em> I would eat there multiple times a month</li>
+              </ul>
+            </li>
+
+            <!-- Roundtrip distance time + wait time + eating time -->
+            <li style="margin-bottom: 1em">
+              <strong
+                >1.5 Points - Roundtrip Distance + Wait Time + Eating
+                Time</strong
+              >
+              <ul
+                style="
+                  list-style-type: none;
+                  padding-left: 1.2em;
+                  margin-top: 0.5em;
+                "
+              >
+                <li style="color: red; font-weight: bold">
+                  <em>0:</em> Over 40 min
+                </li>
+                <li><em>0.75:</em> 30-40 min</li>
+                <li><em>1.5:</em> Under 30 min</li>
+              </ul>
+            </li>
+
+            <!-- Variety -->
+            <li style="margin-bottom: 1em">
+              <strong>0.5 Points - Variety</strong>
+              <ul
+                style="
+                  list-style-type: none;
+                  padding-left: 1.2em;
+                  margin-top: 0.5em;
+                "
+              >
+                <li><em>0:</em> No variety or dietary restriction options</li>
+                <li>
+                  <em>0.25:</em> Has only variety or only dietary restriction
+                  options
+                </li>
+                <li style="color: green; font-weight: bold">
+                  <em>0.5:</em> Has both variety and dietary restriction options
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <button
+          onclick="togglePopup()"
+          style="
+            margin-top: 15px;
+            padding: 8px 16px;
+            background-color: #232323;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+          "
+        >
+          Close
+        </button>
+      </div>
+    </div>
+
+    <script>
+      function togglePopup() {
+        const popup = document.getElementById("popup");
+        if (popup.style.display === "flex") {
+          popup.style.display = "none";
+        } else {
+          popup.style.display = "flex";
+        }
+      }
+    </script>
+  </body>
+</html>
